@@ -1012,6 +1012,12 @@ body::selection {
   .footer-grid {
     gap: 24px;
   }
+
+  .button-primary.cta-booking {
+    font-size: 0.82rem;
+    padding: 12px 24px;
+    letter-spacing: 0.04em;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1034,5 +1040,11 @@ body::selection {
 
   .map-center img {
     border-radius: 4px;
+  }
+
+  .button-primary.cta-booking {
+    font-size: 0.72rem;
+    padding: 10px 14px;
+    letter-spacing: 0.02em;
   }
 }
