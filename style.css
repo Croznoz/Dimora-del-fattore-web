@@ -81,7 +81,13 @@ body::selection {
 
 .nav-cta {
   border: 1px solid var(--outline);
-  padding: 11px 20px;
+  border-radius: 50px;
+  padding: 10px 24px;
+  transition: all 0.3s ease;
+}
+.nav-cta:hover {
+  background: var(--outline);
+  color: var(--surface) !important;
 }
 
 .hero {
@@ -168,36 +174,52 @@ body::selection {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: var(--radius);
-  border: 1px solid var(--outline);
-  letter-spacing: 0.12em;
+  border-radius: 50px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 14px 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 16px 36px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .button-primary {
   background: var(--outline);
   color: var(--surface);
+  border: 1px solid var(--outline);
 }
 
 .button-primary:hover {
-  background: var(--surface);
+  background: transparent;
   color: var(--outline);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(28, 26, 22, 0.12);
 }
 
 .button-primary.cta-booking {
-  transition: all 0.3s ease;
+  border: 1px solid var(--outline);
 }
 
 .button-primary.cta-booking:hover,
 .button-primary.cta-booking:active {
-  background: #c92a2a;
+  background: #d63030;
   color: #ffffff;
-  border-color: #c92a2a;
+  border-color: #d63030;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(214, 48, 48, 0.25);
 }
 
 .button-secondary {
   background: transparent;
+  border: 1px solid rgba(28, 26, 22, 0.2);
+  color: var(--outline);
+}
+
+.button-secondary:hover {
+  border-color: var(--outline);
+  background: rgba(28, 26, 22, 0.03);
+  transform: translateY(-2px);
 }
 
 .section {
@@ -274,15 +296,6 @@ body::selection {
 
 .room-gallery-button {
   width: fit-content;
-  padding: 12px 18px;
-  border-radius: var(--radius);
-  border: 1px solid var(--outline);
-  background: transparent;
-  color: var(--outline);
-}
-
-.room-gallery-button:hover {
-  background: rgba(28, 26, 22, 0.05);
 }
 
 .gallery-modal {
