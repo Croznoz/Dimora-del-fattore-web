@@ -927,9 +927,9 @@ body::selection {
 
   .hero {
     padding: 60px 20px;
-    min-height: 55vh;
+    min-height: 50vh;
     background-size: 100%;
-    background-position: center;
+    background-position: center 55%;
   }
 
   .hero h1 {
