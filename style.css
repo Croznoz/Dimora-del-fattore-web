@@ -193,6 +193,8 @@ body::selection {
   font-size: 0.9rem;
   font-weight: 500;
   padding: 16px 36px;
+  text-decoration: none;
+  white-space: nowrap;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   
@@ -227,6 +229,8 @@ body::selection {
   background: rgba(214, 48, 48, 0.85);
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: clamp(0.75rem, 3.5vw, 1.1rem);
+  padding: clamp(14px, 3vw, 18px) clamp(20px, 6vw, 40px);
   box-shadow: 
     6px 6px 16px rgba(214, 48, 48, 0.3),
     -6px -6px 16px rgba(255, 255, 255, 0.8),
